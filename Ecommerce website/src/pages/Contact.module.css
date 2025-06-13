@@ -1,0 +1,163 @@
+.contactContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+.infoCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 2rem 2rem 1.5rem 2rem;
+  width: 340px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.iconCircle {
+  background: #000000;
+  color: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 4px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 1.5rem 0;
+}
+
+.formCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 2rem;
+  flex: 1;
+  min-width: 340px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.9rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f7f7f7;
+}
+
+.textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f7f7f7;
+  resize: none;
+  min-height: 140px;
+}
+
+.submitBtn {
+  background: #080808;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover {
+  background: #000000;
+}
+
+@media (max-width: 900px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem 0.5rem;
+    gap: 1.5rem;
+  }
+  .infoCard, .formCard {
+    width: 100%;
+    min-width: unset;
+    padding: 1.5rem 1rem;
+  }
+  .formCard {
+    margin-top: 0;
+  }
+  .inputRow {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactContainer {
+    padding: 1rem 0.2rem;
+    gap: 1rem;
+  }
+  .infoCard, .formCard {
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  }
+  .iconCircle {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .input, .textarea {
+    font-size: 0.97rem;
+    padding: 0.7rem 0.7rem;
+  }
+  .submitBtn {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+  .infoSection h4, .infoSection p {
+    font-size: 0.97rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .infoCard, .formCard {
+    padding: 0.5rem 0.2rem;
+  }
+  .input, .textarea {
+    font-size: 0.92rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .submitBtn {
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+  }
+} 
