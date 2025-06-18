@@ -7,18 +7,19 @@ const addproduct = async (e) => {
     const description = document.getElementById('description').value;
     const price = document.getElementById('price').value;
     const category = document.getElementById('category').value;
-    const stock = document.getElementById('stock').value;
+    const instock = document.getElementById('stock').value;
     const image = document.getElementById('imageUrl').value;
     if (name === "" || description === "" || price === "" || category === "" || image === "" || stock === "") {
        alert("Please Fill All Fields") 
     } else {
         try {
+           let response= await
             axios.post('http://localhost:3000/addproduct', {
                 name,
                 description,
                 price,
                 category,
-                stock,
+                instock,
                 image,
             });
             console.log(response.data);
